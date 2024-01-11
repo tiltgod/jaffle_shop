@@ -38,8 +38,8 @@ And finally:
 # Install dbt deps (might not required as long as you have no -or empty- `dbt_packages.yml` file)
 dbt deps
 
-# Build seeds
-dbt seeds --profiles-dir profiles
+# Build seed
+dbt seed --profiles-dir profiles
 
 # Build data models
 dbt run --profiles-dir profiles
@@ -75,6 +75,7 @@ We will then use `psql`, a terminal-based interface for PostgreSQL that allows u
 ```commandline
 psql -U postgres
 ```
+or connect via dbeaver
 
 You can list tables and views as shown below:
 ```bash
